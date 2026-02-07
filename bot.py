@@ -27,7 +27,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Токен из переменных окружения
-TOKEN = os.environ.get("TELEGRAM_TOKEN")
+#TOKEN = os.environ.get("TELEGRAM_TOKEN")
+# Токен из переменных окружения или прямо в коде
+TOKEN = os.environ.get("TELEGRAM_TOKEN") or "8420331716:AAF0uPajR0r4bVM3k1Z84zWxKaxutJdDiZo"
 
 # Файл для данных
 DATA_FILE = "mood_data.json"
